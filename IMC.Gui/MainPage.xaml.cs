@@ -27,30 +27,6 @@
 
             string estadoNutricional = string.Empty;
 
-            if (imc < 18.5M)
-            {
-                estadoNutricional = "peso bajo";
-            }
-            if (imc < 25.0M)
-            {
-                estadoNutricional = "peso normal";
-
-            }
-
-            if (imc < 30.0M)
-            {
-                estadoNutricional = "sobre peso";
-            }
-
-            if (imc < 40.0M)
-            {
-                estadoNutricional = "obesidad";
-            }
-            else
-            {
-                estadoNutricional = "Obesidad extrema";
-            }
-
             SituacionNutricionalLabel.Text = SituacionNutricional(imc);
         }
 
@@ -64,25 +40,23 @@
             LimpiarInformacion();
         }
 
-       private static string SituacionNutricional(decimal imc)
+        private static string SituacionNutricional(decimal imc)
         {
             string estadoNutricional;
+
             if (imc < 18.5M)
             {
-                 estadoNutricional = "peso bajo";
+                estadoNutricional = "peso bajo";
             }
-            if (imc < 25.0M)
+            else if (imc < 25.0M)
             {
                 estadoNutricional = "peso normal";
-
             }
-
-            if (imc < 30.0M)
+            else if (imc < 30.0M)
             {
                 estadoNutricional = "sobre peso";
             }
-
-            if (imc < 40.0M)
+            else if (imc < 40.0M)
             {
                 estadoNutricional = "obesidad";
             }
@@ -92,7 +66,8 @@
             }
 
             return estadoNutricional;
-
         }
+
     }
+    
 }
