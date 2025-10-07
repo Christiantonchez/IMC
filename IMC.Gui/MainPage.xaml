@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IMC.Gui.MainPage"
+             Shell.BackgroundColor="#512BD4"
+             Shell.TitleColor="White"
+             Title="Indice de masa corporal">
+
+
+    <VerticalStackLayout
+        Spacing="24"
+        Margin="24"
+        Padding="16">
+
+        <Border 
+            Padding="16"
+            Stroke="LightGray">
+
+            <VerticalStackLayout
+            Spacing="4">
+            <Label
+                 Text="Peso en kg"
+                 FontSize="Small">
+            </Label>
+
+            <Entry
+                FontSize="Small"
+                x:Name="PesoEntry"/>
+                <Label
+                 Text="Estatura en metros"
+                 FontSize="Small">
+                </Label>
+                <Entry
+                    FontSize="Small"
+                    x:Name="EstaturaEntry"/>
+
+            </VerticalStackLayout>
+        </Border>
+
+        
+        <HorizontalStackLayout
+            Spacing="36"
+            HorizontalOptions="Center">
+
+            <Button
+                Text="Calcular"
+                FontSize="Small"
+                Clicked="Calcular_Button_Clicked"/>
+
+            <Button
+                Text="Limpiar"
+                FontSize="Small"
+                Clicked="Limpiar_Button_Clicked"/>
+        </HorizontalStackLayout>
+
+
+        <Border
+            Stroke="LightGray"
+          
+            >
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"/>
+            </Border.StrokeShape>
+            <VerticalStackLayout
+                        Spacing="4"
+                        Padding="16">
+                <Label Text="El indice de la masa coporporal de la persona es:"
+                       FontSize="Small"/>
+                <Label Text="24.1224"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       x:Name="ImcLabel"/>
+                <Label Text="La situacion nutricional de la persona es:"
+                       FontSize="Small"/>
+                <Label Text="Peso nomal"
+                        HorizontalOptions="Center"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       x:Name="SituacionNutricionalLabel"/>
+
+
+
+
+
+            </VerticalStackLayout>
+            
+            
+            
+        </Border>
+
+
+
+    </VerticalStackLayout>
+    
+   
+             
+
+
+</ContentPage>
