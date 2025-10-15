@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMC.Gui", "IMC.Gui\IMC.Gui.csproj", "{E105BB3F-04A9-4CF8-9851-FC4F2FF31B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imc.Console", "Imc.Console\Imc.Console.csproj", "{5097B838-B567-42AD-BA19-4DA4346F06F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E105BB3F-04A9-4CF8-9851-FC4F2FF31B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E105BB3F-04A9-4CF8-9851-FC4F2FF31B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E105BB3F-04A9-4CF8-9851-FC4F2FF31B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5097B838-B567-42AD-BA19-4DA4346F06F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5097B838-B567-42AD-BA19-4DA4346F06F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5097B838-B567-42AD-BA19-4DA4346F06F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5097B838-B567-42AD-BA19-4DA4346F06F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
